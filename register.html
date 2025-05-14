@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demon Slayer Academy Enrollment</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <form id="enrollForm" novalidate>
+    <fieldset>
+      <legend>Join the Demon Slayer Academy</legend>
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z ]+" placeholder="Enter Your Full Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required min="12" max="40" placeholder="12–40 only">
+
+      <label for="hashira">Choose Your Hashira:</label>
+      <select id="hashira" name="hashira" required>
+        <option value="">-- Select --</option>
+        <option value="rengoku">Kyojuro Rengoku</option>
+        <option value="uzui">Tengen Uzui</option>
+        <option value="giyu">Giyu Tomioka</option>
+        <option value="tokito">Muichiro Tokito</option>
+        <option value="sanemi">Sanemi Shinazugawa</option>
+        <option value="kanroji">Mitsuri Kanroji</option>
+        <option value="iguro">Obanai Iguro</option>
+        <option value="shinobu">Shinobu Kocho</option>
+        <option value="gyomei">Gyomei Himejima</option>
+      </select>
+
+      <label for="reason">Why do you want to become a Demon Slayer?</label>
+      <textarea id="reason" name="reason" required placeholder="To protect those who can't protect themselves..."></textarea>
+
+      <button type="submit">🔥 Enroll Now</button>
+    </fieldset>
+  </form>
+
+  <script>
+    const form = document.getElementById("enrollForm");
+
+    form.addEventListener("submit", function (e) {
+      const age = document.getElementById("age").value;
+      const name = document.getElementById("fullName").value.trim();
+      const reason = document.getElementById("reason").value.trim();
+      const hashira = document.getElementById("hashira").value;
+
+      if (!name || !reason || !hashira || age < 12 || age > 40) {
+        alert("Please make sure all fields are correctly filled.\nAge must be between 12 and 40.");
+        e.preventDefault();
+      }
+    });
+  </script>
+
+</body>
+</html>

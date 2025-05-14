@@ -1,0 +1,412 @@
+* a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-size: 90px;
+    color: #290707;
+    display: grid;
+    justify-content: center;
+    margin: 4px;
+}
+body{
+    background-color: antiquewhite;
+}
+
+button{
+    background-color: antiquewhite;
+    color: #000;
+    border: 1px solid #290707 ;
+    border-radius: 2em;
+    padding: 0px ;
+    margin: 0px;
+    transition: backgorund-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button a{
+    font-size: 20px;
+}
+button:hover{
+    background-color: #290707;
+    color: white;
+    box-shadow: 0em 0.2em 0.2em 0.2em rgba(256,0,0,0.5);
+    transform: translateY(-5px);
+}
+
+button:hover a{
+    /* background-color: #290707; */
+    color: white;
+
+}
+
+button a{
+    color: black;
+}
+
+img{
+    height: 190px;
+    width: 150px;
+}
+
+.demonSlayerImg img{
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.containerTagline h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerTagline p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.demonSlayerImg img{
+    width: 99vw;
+   border-radius: 30px;
+}
+
+.ourMission{
+    margin-top:10px;
+    background-color: rgb(255, 211, 153);
+    border: 2px solid #290707;
+    border-radius: 20px;
+    box-shadow: 0em 0.1em 0.1em 0.1em black;
+}
+
+.ourMission h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.ourMission p{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.ourPricipal {
+    padding: 2rem;
+    border: 2px solid #290707;
+    border-radius: 20px;
+    margin-top: 0.8em;
+  }
+  
+.principal-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+  
+.principal-content img {
+    width: 350px;
+    height: 450px;
+    border-radius: 12px;
+}
+  
+.principal-content p {
+    flex: 1;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.ourPricipal h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.containerEducators {
+    background-color: #290707;
+    color: antiquewhite; 
+    padding: 40px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .containerEducators h2 {
+    font-size: 3.5rem;
+    margin-top:0px;
+  }
+  
+  .containerEducators h4 {
+    font-size: 1.2rem;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  
+  .educators {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+  }
+  
+  .hashira-row {
+    display: flex;
+    justify-content: space-around; 
+    gap: 20px; 
+  }
+  
+  .hashira-item {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hashira-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hashira-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .hashira-item h2 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin-bottom: 5px;
+  }
+  
+  .hashira-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hashira-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
+.educators .containerRengoku{
+    border: 2px solid antiquewhite;
+}
+
+.containerEducators {
+    background-color: #290707;
+    padding: 40px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .educators {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .hashira-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .educators div[id^="container"] {
+    background: antiquewhite;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .educators div[id^="container"]:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .educators div[id^="container"] img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .educators div[id^="container"] h2 {
+    font-size: 3rem;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  
+  .educators div[id^="container"] h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .educators div[id^="container"] p {
+    font-size: 2rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  #containerRengoku {
+    border: 2px solid #FF5722; /* Orange - Fire */
+  }
+  
+  #containerUzui {
+    border: 2px solid #9C27B0; /* Purple - Sound */
+  }
+  
+  #containerGiyu {
+    border: 2px solid #03A9F4; /* Blue - Water */
+  }
+  
+  #containerTokito {
+    border: 2px solid #B0BEC5; /* Gray - Mist */
+  }
+  
+  #containerSanemi {
+    border: 2px solid #8BC34A; /* Light Green - Wind */
+  }
+  
+  #containerKanroji {
+    border: 2px solid #E91E63; /* Pink - Love */
+  }
+  
+  #containerIguro {
+    border: 2px solid #607D8B; /* Blue Gray - Serpent */
+  }
+  
+  #containerShinobu {
+    border: 2px solid #AA00FF; /* Violet - Insect */
+  }
+  
+  #containerGyomei {
+    border: 2px solid #795548; /* Brown - Stone */
+  }
+
+
+
+  .educators div[id^="container"] img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+
+  .educators div[id^="container"] {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  #containerRengoku:hover {
+    box-shadow: 0 0 40px 10px #FF5722;
+  }
+  
+  #containerUzui:hover {
+    box-shadow: 0 0 40px 10px #9C27B0;
+  }
+  
+  #containerGiyu:hover {
+    box-shadow: 0 0 40px 10px #03A9F4;
+  }
+  
+  #containerTokito:hover {
+    box-shadow: 0 0 40px 10px #B0BEC5;
+  }
+  
+  #containerSanemi:hover {
+    box-shadow: 0 0 40px 10px #8BC34A;
+  }
+  
+  #containerKanroji:hover {
+    box-shadow: 0 0 40px 10px #E91E63;
+  }
+  
+  #containerIguro:hover {
+    box-shadow: 0 0 40px 10px #607D8B;
+  }
+  
+  #containerShinobu:hover {
+    box-shadow: 0 0 40px 10px #AA00FF;
+  }
+  
+  #containerGyomei:hover {
+    box-shadow: 0 0 40px 10px #b07f6d;
+  }
+
+  .educators div[id^="container"]:hover {
+    transform: translateY(-10px);
+  }
+
+/* indi */
+
+  #containerRengoku:hover p{
+    color:#FF5722;
+    font-weight: bolder;
+  }
+  
+  #containerUzui:hover p{
+    color:#9C27B0;
+    font-weight: bolder;
+  }
+  
+  #containerGiyu:hover p{
+    color: #03A9F4;
+    font-weight: bolder;
+  }
+  
+  #containerTokito:hover p{
+    color:#B0BEC5 ;
+    font-weight: bolder;
+  }
+  
+  #containerSanemi:hover p{
+    color: #8BC34A;
+    font-weight: bolder;
+  }
+  
+  #containerKanroji:hover p{
+    color: #E91E63 ;
+    font-weight: bolder;
+  }
+  
+  #containerIguro:hover p{
+    color:#607D8B ;
+    font-weight: bolder;
+  }
+  
+  #containerShinobu:hover p{
+    color: #AA00FF;
+    font-weight: bolder;
+  }
+  
+  #containerGyomei:hover p{
+    color: #b07f6d;
+    font-weight: bolder;
+  }
+
+  .educators div[id^="container"]:hover {
+    transform: translateY(-10px);
+  }
