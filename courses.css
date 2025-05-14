@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2f2020; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+
+  .coursesContainer {
+    width: 90%;
+    max-width: 1200px;
+    padding: 3rem 2rem;
+    background-color: antiquewhite; 
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 95, 2, 0.5); 
+    text-align: center;
+  }
+  
+  .coursesContainer h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff9800; 
+    margin-bottom: 20px;
+  }
+  
+  .coursesIntro {
+    font-size: 1.2rem;
+    color: #290707; 
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .courseGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px; /* More space between rows and columns */
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+  
+  /* Mobile responsive: 1 card per row */
+  @media (max-width: 768px) {
+    .courseGrid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+  
+  .courseCard {
+    background-color: #290707; 
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 152, 0, 0.4); 
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .courseCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(255, 98, 0, 0.9);
+  }
+  
+
+  .courseCard h3 {
+    font-size: 1.6rem;
+    color: #ff9800; 
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .courseCard p {
+    font-size: 1rem;
+    color: #ddd; 
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .courseCard .level {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .coursesContainer {
+      padding: 1rem;
+    }
+  
+    .coursesContainer h2 {
+      font-size: 2.5rem;
+    }
+  
+    .courseGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
